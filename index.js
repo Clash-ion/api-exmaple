@@ -16,10 +16,7 @@ app.post("/api/v1/takeEmail/", (req,res) => {
     var {email} = req.body
     console.log(email)
     res.status(200).json({
-        "success" : true,
-        body : {
-            "emailRecieved" : email       
-        }
+        "success" : true
     })
 })
 
